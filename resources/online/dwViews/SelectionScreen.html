@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Top Trumps Game</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .bg {
+                background-repeat: no-repeat;
+                background-image: linear-gradient(hsl(191, 27%, 71%), #fcfcfd);
+            }
+
+            .text{
+                font-size:15px;
+                color:white; 
+                text-align: left;
+                background-color:rgb(146, 198, 228);
+                height: 30px;
+                width: 800px;
+                margin: 0 auto;
+            }
+            
+            .content{
+                margin: 0 auto;
+                width: 800px;
+            }
+
+            .status{
+                width: 155px;
+                height: 130px;
+                margin: 10px;
+                float: left;
+                background-color: white;
+                border: 1px solid white;
+                font-size: 15px;
+            }
+
+            .display{
+                /* display: inline-block; */
+                margin: 0 ;
+                width: 620px;
+                float: right;
+            }
+
+            .card{
+                
+                color: black;
+                border: 1px solid white;
+                width: 180px;
+                height: 300px;
+                /* display: inline-block; */
+                margin: 10px;
+                background-color: white;
+            	float: left;
+            }
+
+            .name{
+            	border: 0px solid white;
+                width: 180px;
+                height: 40px;
+                display: inline-block;
+                margin: 0px;
+                
+            }
+            .picturename{
+            	width: 50px;
+            	height: 20px;
+            	/*display: inline-block; */
+                margin: 10px;
+                float: left;
+            }
+            
+            .cardleft{
+           		width: 20px;
+            	height: 20px;
+            	/*display: inline-block; */
+                margin: 10px;
+                float: left;
+            	background-color:yellowgreen;
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            .picture{
+            	border: 0px;
+                width: 180px;
+                height: 80px;
+                display: inline-block;
+                margin: 10px;
+            }
+
+            .property{
+            	border: 0px ;
+                width: 180px;
+                height: 160px;
+                display: inline-block;
+                margin: 10px;
+            }
+
+            .button{
+                background-color:rgb(18, 156, 110);
+                border: none;
+                color: white;
+                width: 155px;
+                height: 20px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 15px;
+                border-radius: 3px;
+                margin: 0 auto;
+            }
+        </style>
+        
+    </head>
+
+    <body class="bg">
+        <!--header div-->
+        <div class="header">
+            <h1 style="background-color:rgb(66, 119, 155); font-size: 20px; color:white; text-align:center; height: 30px; width: 800px; margin: 0px auto;">Top Trumps Game</h1>
+            <p class="text">New Game</p>
+        </div>
+        <!--content div-->
+        <div class="content">
+            <div class="status">
+                <p style="background-color: rgb(146, 198, 228);color: white; margin: 0px; font-size: 17px; height: 50px; width:155px;">The active player is</p>
+                <p style="font-size:15px; height:50px; width:155px; margin:5px;">They select</p>
+                <button class="button">show winner</button>
+            </div>
+            
+            <div class="display">
+
+                <!-- Player card -->
+                <div class="card" >
+                     <div class="name">
+                    	<h1 style="font-size:15px;background-color:rgb(75, 177, 114); font-size: 20px; color:white; text-align:center; height: 40px; width: 180px;">You</h1>
+                    </div>
+                    <div class="picturename">
+                    	<p>ABC</p>
+                    </div><div class="cardleft">
+                    		<p>14</p>
+                    </div>
+                    
+                    <div class="picture"> 
+                    	<img src="1.png" />
+                    </div>
+                    <div class="property">
+                    	<p>
+                    	speed, <br />
+                    	cargo, <br />
+                    	size, <br />
+                    	range, <br />
+                    	firepower, <br />
+                    	</p>
+                    </div>          
+                </div>
+
+                <!-- AI card1 -->
+                <div class="card" >
+                    <div class="name">
+                    	<h1 style="font-size:15px;background-color:rgb(75, 177, 114); font-size: 20px; color:white; text-align:center; height: 40px; width: 180px;">AI Player1</h1>
+                    </div>
+                    <div class="picturename">
+                    	<p>ABC</p>
+                    </div><div class="cardleft">
+                    		<p>8</p>
+                    </div>
+                    <div class="picture"> 
+                    	<img src="1.png" />
+                    </div>
+                    <div class="property">
+                    	<p>
+                    	speed, <br />
+                    	cargo, <br />
+                    	size, <br />
+                    	range, <br />
+                    	firepower, <br />
+                    	</p>
+                    </div>
+                                
+                </div>
+                <!-- AI card2 -->
+                <div class="card" >
+                    <div class="name">
+                    	<h1 style="font-size:15px;background-color:rgb(75, 177, 114); font-size: 20px; color:white; text-align:center; height: 40px; width: 180px;">AI Player2</h1>
+                    </div>
+                    <div class="picturename">
+                    	<p>ABC</p>
+                    </div><div class="cardleft">
+                    		<p>8</p>
+                    </div>
+                    <div class="picture"> 
+                    	<img src="1.png" />
+                    </div>
+                    <div class="property">
+                    	<p>
+                    	speed, <br />
+                    	cargo, <br />
+                    	size, <br />
+                    	range, <br />
+                    	firepower, <br />
+                    	</p>
+                    </div>
+                                    
+                </div>
+                <!-- AI card3 -->
+                <div class="card" >
+                    <div class="name">
+                    	<h1 style="font-size:15px;background-color:rgb(75, 177, 114); font-size: 20px; color:white; text-align:center; height: 40px; width: 180px;">AI Player3</h1>
+                    </div>
+                    <div class="picturename">
+                    	<p>ABC</p>
+                    </div><div class="cardleft">
+                    		<p>8</p>
+                    </div>
+                    <div class="picture"> 
+                    	<img src="1.png" />
+                    </div>
+                    <div class="property">
+                    	<p>
+                    	speed, <br />
+                    	cargo, <br />
+                    	size, <br />
+                    	range, <br />
+                    	firepower, <br />
+                    	</p>
+                    </div>
+                                        
+                </div>
+                <!-- AI card4 -->
+                <div class="card" >
+                    <div class="name">
+                    	<h1 style="font-size:15px;background-color:rgb(75, 177, 114); font-size: 20px; color:white; text-align:center; height: 40px; width: 180px;">AI Player4</h1>
+                    </div>
+                    <div class="picturename">
+                    	<p>ABC</p>
+                    </div><div class="cardleft">
+                    		<p>8</p>
+                    </div>
+                    <div class="picture"> 
+                    	<img src="1.png" />
+                    </div>
+                    <div class="property">
+                    	<p>
+                    	speed, <br />
+                    	cargo, <br />
+                    	size, <br />
+                    	range, <br />
+                    	firepower, <br />
+                    	</p>
+                    </div>
+                                        
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </body>
+
+</html>
