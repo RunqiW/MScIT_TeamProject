@@ -156,8 +156,8 @@ public class TopTrumpsRESTAPI {
 		//check if game end/ if human lose/ if this round draw
 		if(game.checkGameEnd()){
 			// if game end (players<=1)
-			gameScreenView.setRoundProgress("Round: " + game.getRounds() + ". " + game.getPlayers().getFirst().getPlayerName() + " wins this round.");
-			gameScreenView.setCurrentPlayer("Game Over."+game.getPlayers().getFirst().getPlayerName() + " wins the game.");
+			gameScreenView.setRoundProgress("Round: " + game.getRounds() + ". " + game.getPlayers().getFirst().getPlayerName() + " wins the game");
+			gameScreenView.setCurrentPlayer("Game Over."+game.getPlayers().getFirst().getPlayerName() + " wins.");
 			gameScreenView.setBtnDisplay(4,true);
 			String stat = "";
 			for(int i =0;i<conf.getNumAIPlayers()+1;i++){
