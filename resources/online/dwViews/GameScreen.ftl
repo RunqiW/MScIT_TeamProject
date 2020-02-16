@@ -33,8 +33,6 @@
                 height: 130px;
                 margin: 10px;
                 float: left;
-                background-color: white;
-                border: 1px solid white;
                 font-size: 15px;
             }
 
@@ -78,7 +76,7 @@
             	height: 20px;
             	/*display: inline-block; */
                 margin: 10px;
-                float: left;
+                float: right;
             	background-color:yellowgreen;
                 border-radius: 10px;
                 text-align: center;
@@ -281,7 +279,7 @@
                 <p style="background-color: rgb(146, 198, 228);color: white; margin: 0px; font-size: 17px; height: 50px; width:155px;">
                     ${currentPlayer}</p>
                     <div class="dropdown" id="select">
-                        <button class="dropbtn">Next: Category Selection</button>
+                        <button class="dropbtn">Select Category</button>
                         <div class="dropdown-content">
                         <form action="/toptrumps/toSelectCategory" method="get">
                             <button class="drpodownbtn" type="submit" value="0" name="dropBtn">
@@ -302,7 +300,7 @@
                     </div>
             </div>
                 <div>
-                    <p style="font-size:15px; height:50px; width:155px; margin:5px;">${categorySelection}</p>
+                    <p style="font-size:15px; height:auto; width:155px; background-color: white; text-margin:5px;">${categorySelection}</p>
                     <form action="/toptrumps/showWinner" method= "get"><button class="button" id="showWinner">Show Winner</button>
                     </form>
                 </div>
@@ -312,17 +310,17 @@
                     </form>
                 </div>
                 <div id="gameOver">
-                    <form action="/toptrumps/newGame" method="get"><button class="button" type="submit">Back</button>
+                    <form action="/toptrumps" method="get"><button class="button" type="submit">Back</button>
                     </form>
                 </div>
         </div>
-    </div>
+
         
-        <div>
+        <div style="margin:10px;float:left;">
             <form action="/toptrumps/nextRound" method= "get" ><button class="button" id = "next">Next Round</button>
             </form>
         </div>
-
+    </div>
 
     </body>
 </html>
