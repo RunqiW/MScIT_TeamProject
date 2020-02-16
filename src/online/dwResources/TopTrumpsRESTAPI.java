@@ -80,7 +80,7 @@ public class TopTrumpsRESTAPI {
 
 		if (game.getCurrentPlayer().isHuman()) {
 			//views when human choose category
-			gameScreenView.setRoundProgress("Round: "+game.getRounds()+". Waiting on you to a category");
+			gameScreenView.setRoundProgress("Round: "+game.getRounds()+". Waiting on you to select a category");
 			gameScreenView.setBtnDisplay(1,true);
 		}else{
             //views when AI choose category
@@ -157,8 +157,7 @@ public class TopTrumpsRESTAPI {
 		if(game.checkGameEnd()){
 			// if game end (players<=1)
 			gameScreenView.setRoundProgress("Round: " + game.getRounds() + ". " + game.getPlayers().getFirst().getPlayerName() + " wins this round.");
-			gameScreenView.setCurrentPlayer("Game Over.");
-			gameScreenView.setCategorySelection(game.getPlayers().getFirst().getPlayerName() + " wins the game!");
+			gameScreenView.setCurrentPlayer("Game Over."+game.getPlayers().getFirst().getPlayerName() + " wins the game.");
 			gameScreenView.setBtnDisplay(4,true);
 			String stat = "";
 			for(int i =0;i<conf.getNumAIPlayers()+1;i++){
