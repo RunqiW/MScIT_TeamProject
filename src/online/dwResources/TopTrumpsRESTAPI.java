@@ -193,7 +193,7 @@ public class TopTrumpsRESTAPI {
 					stat = stat + p.getPlayerName()+" wins "+p.getRoundsWon()+" rounds.</br>";
 				}
 				gameScreenView.setRoundProgress("Round: " + game.getRounds() + ". "+ game.getPlayers().getFirst().getPlayerName()+" wins the game.");
-				gameScreenView.setCurrentPlayer("You Lose. Game is auto-played till end.");
+				gameScreenView.setCurrentPlayer("You Lose. Game is auto-played.");
 				gameScreenView.setCategorySelection(game.getRounds()+" rounds played, include"+game.getDraws()+ " draws.</br>"+stat);
 				gameScreenView.setBtnDisplay(4,true);
 
